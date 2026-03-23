@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachel E. Weitzman, MD MPH MS — Facial Plastic & Reconstructive Surgeon</title>
+    <meta name="description" content="Dr. Rachel E. Weitzman is a facial plastic and reconstructive surgeon in New York City. Harvard-trained, published researcher, specializing in deep plane facelift, rhinoplasty, and facial rejuvenation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 300;
+            color: #2c2c2c;
+            background: #faf9f7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 24px;
+            text-align: center;
+        }
+
+        .portrait {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center top;
+            margin-bottom: 48px;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+        }
+
+        .name {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 400;
+            font-size: 42px;
+            letter-spacing: 0.02em;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .credentials {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #8a8580;
+            margin-bottom: 32px;
+        }
+
+        .title {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 300;
+            font-style: italic;
+            font-size: 22px;
+            color: #5a5550;
+            margin-bottom: 12px;
+        }
+
+        .location {
+            font-size: 14px;
+            font-weight: 400;
+            color: #8a8580;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 48px;
+        }
+
+        .divider {
+            width: 40px;
+            height: 1px;
+            background: #c8c3be;
+            margin: 0 auto 48px;
+        }
+
+        /* Bio */
+        .bio {
+            max-width: 600px;
+            margin: 0 auto 48px;
+            text-align: center;
+        }
+
+        .bio p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #4a4540;
+            margin-bottom: 16px;
+        }
+
+        /* Specialties */
+        .specialties {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 48px;
+        }
+
+        .specialty-tag {
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #6a6560;
+            border: 1px solid #d8d3ce;
+            padding: 8px 20px;
+            border-radius: 24px;
+        }
+
+        /* Training */
+        .training {
+            max-width: 500px;
+            margin: 0 auto 48px;
+            text-align: center;
+        }
+
+        .training-heading {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 400;
+            font-size: 18px;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            letter-spacing: 0.05em;
+        }
+
+        .training-item {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #5a5550;
+            margin-bottom: 8px;
+        }
+
+        .training-item strong {
+            font-weight: 500;
+            color: #3a3530;
+        }
+
+        /* Research callout */
+        .research {
+            max-width: 500px;
+            margin: 0 auto 48px;
+            text-align: center;
+            padding: 32px;
+            background: rgba(0,0,0,0.02);
+            border-radius: 8px;
+        }
+
+        .research p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #5a5550;
+        }
+
+        .research strong {
+            font-weight: 500;
+            color: #3a3530;
+        }
+
+        /* CTA */
+        .cta {
+            margin-bottom: 48px;
+            text-align: center;
+        }
+
+        .cta-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 20px;
+            color: #5a5550;
+            margin-bottom: 24px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #faf9f7;
+            background: #2c2c2c;
+            padding: 16px 40px;
+            border-radius: 32px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #4a4540;
+        }
+
+        /* Social links */
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-bottom: 20px;
+        }
+
+        .social a {
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 0.08em;
+            color: #8a8580;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social a:hover {
+            color: #2c2c2c;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 24px;
+            text-align: center;
+            font-size: 12px;
+            color: #b0aba5;
+            letter-spacing: 0.05em;
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .name {
+                font-size: 32px;
+            }
+
+            .portrait {
+                width: 220px;
+                height: 220px;
+            }
+
+            .title {
+                font-size: 18px;
+            }
+
+            .hero {
+                padding: 48px 20px;
+            }
+
+            .specialties {
+                gap: 8px;
+            }
+
+            .specialty-tag {
+                font-size: 11px;
+                padding: 6px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <img src="rachel.jpg" alt="Dr. Rachel E. Weitzman" class="portrait">
+
+        <h1 class="name">Rachel E. Weitzman</h1>
+        <p class="credentials">MD · MPH · MS</p>
+
+        <p class="title">Facial Plastic & Reconstructive Surgeon</p>
+        <p class="location">New York City</p>
+
+        <div class="divider"></div>
+
+        <div class="bio">
+            <p>Dr. Weitzman is a Harvard-trained surgeon specializing in facial rejuvenation, with a focus on deep plane facelift, rhinoplasty, and the aging face. She brings a surgeon-scientist's perspective to every patient — grounding aesthetic decisions in anatomy, evidence, and precision.</p>
+            <p>She is currently completing a Facial Plastic & Reconstructive Surgery fellowship at NYU, following her residency in Otolaryngology–Head & Neck Surgery at NewYork-Presbyterian / Columbia and Weill Cornell.</p>
+        </div>
+
+        <div class="specialties">
+            <span class="specialty-tag">Deep Plane Facelift</span>
+            <span class="specialty-tag">Rhinoplasty</span>
+            <span class="specialty-tag">Facial Rejuvenation</span>
+            <span class="specialty-tag">Injectables</span>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="training">
+            <p class="training-heading">Training</p>
+            <p class="training-item"><strong>Fellowship</strong> — Facial Plastic & Reconstructive Surgery, NYU</p>
+            <p class="training-item"><strong>Residency</strong> — Otolaryngology–Head & Neck Surgery, Columbia / Weill Cornell</p>
+            <p class="training-item"><strong>Medical School</strong> — Harvard Medical School, cum laude</p>
+            <p class="training-item"><strong>MPH</strong> — Harvard T.H. Chan School of Public Health</p>
+            <p class="training-item"><strong>MS & BA</strong> — University of Pennsylvania, summa cum laude</p>
+        </div>
+
+        <div class="research">
+            <p><strong>30+ peer-reviewed publications</strong> in leading journals including <em>The Laryngoscope</em>, <em>JAMA Neurology</em>, and <em>Facial Plastic Surgery & Aesthetic Medicine</em>. Resident Editor of the <em>Facial Plastic Surgery Clinics of North America</em>.</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="cta">
+            <p class="cta-text">Practice launching 2027</p>
+            <a href="mailto:rachelweitzmanmd@icloud.com" class="cta-button">Get in Touch</a>
+        </div>
+
+        <div class="social">
+            <a href="https://www.instagram.com/rachelweitzmanmd/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.researchgate.net/scientific-contributions/Rachel-E-Weitzman-2157705446" target="_blank" rel="noopener">ResearchGate</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Rachel+Weitzman" target="_blank" rel="noopener">PubMed</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 Rachel E. Weitzman, MD MPH MS
+    </footer>
+</body>
+</html>
