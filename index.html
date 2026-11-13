@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rachel E. Weitzman, MD MPH MS — Facial Plastic & Reconstructive Surgeon</title>
-    <meta name="description" content="Dr. Rachel E. Weitzman is a facial plastic and reconstructive surgeon in New York City. Harvard-educated, published researcher, specializing in deep plane facelift, rhinoplasty, and facial rejuvenation.">
+    <title>Rachel Weitzman, MD | Facial Plastic Surgery New York City</title>
+    <meta name="description" content="Rachel Weitzman, MD is a facial plastic and reconstructive surgeon in New York City with a focus on facelift, rhinoplasty, blepharoplasty, and facial rejuvenation.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-075PW1PQ7T"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -16,206 +16,154 @@
       gtag('js', new Date());
       gtag('config', 'G-075PW1PQ7T');
     </script>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Inter', -apple-system, sans-serif;
-            font-weight: 300;
-            color: #2c2c2c;
-            background: #faf9f7;
-            -webkit-font-smoothing: antialiased;
-        }
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 60px 24px;
-            text-align: center;
-        }
-        .portrait {
-            width: 280px;
-            height: 280px;
-            border-radius: 50%;
-            object-fit: cover;
-            object-position: center top;
-            margin-bottom: 48px;
-            box-shadow: 0 8px 40px rgba(0,0,0,0.08);
-        }
-        .name {
-            font-family: 'Cormorant Garamond', serif;
-            font-weight: 400;
-            font-size: 42px;
-            letter-spacing: 0.02em;
-            color: #1a1a1a;
-            margin-bottom: 8px;
-        }
-        .credentials {
-            font-family: 'Inter', sans-serif;
-            font-weight: 300;
-            font-size: 14px;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: #8a8580;
-            margin-bottom: 32px;
-        }
-        .title {
-            font-family: 'Cormorant Garamond', serif;
-            font-weight: 300;
-            font-style: italic;
-            font-size: 22px;
-            color: #5a5550;
-            margin-bottom: 12px;
-        }
-        .location {
-            font-size: 14px;
-            font-weight: 400;
-            color: #8a8580;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            margin-bottom: 48px;
-        }
-        .divider {
-            width: 40px;
-            height: 1px;
-            background: #c8c3be;
-            margin: 0 auto 48px;
-        }
-        .bio {
-            max-width: 600px;
-            margin: 0 auto 48px;
-            text-align: center;
-        }
-        .bio p {
-            font-size: 16px;
-            line-height: 1.8;
-            color: #4a4540;
-            margin-bottom: 16px;
-        }
-        .training {
-            max-width: 500px;
-            margin: 0 auto 48px;
-            text-align: center;
-        }
-        .training-heading {
-            font-family: 'Cormorant Garamond', serif;
-            font-weight: 400;
-            font-size: 18px;
-            color: #1a1a1a;
-            margin-bottom: 20px;
-            letter-spacing: 0.05em;
-        }
-        .training-item {
-            font-size: 14px;
-            line-height: 1.6;
-            color: #5a5550;
-            margin-bottom: 8px;
-        }
-        .training-item strong {
-            font-weight: 500;
-            color: #3a3530;
-        }
-        .research {
-            max-width: 500px;
-            margin: 0 auto 48px;
-            text-align: center;
-            padding: 32px;
-            background: rgba(0,0,0,0.02);
-            border-radius: 8px;
-        }
-        .research p {
-            font-size: 14px;
-            line-height: 1.7;
-            color: #5a5550;
-        }
-        .research strong {
-            font-weight: 500;
-            color: #3a3530;
-        }
-        .cta {
-            margin-bottom: 48px;
-            text-align: center;
-        }
-        .cta-button {
-            display: inline-block;
-            font-family: 'Inter', sans-serif;
-            font-size: 13px;
-            font-weight: 400;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: #faf9f7;
-            background: #2c2c2c;
-            padding: 16px 40px;
-            border-radius: 32px;
-            text-decoration: none;
-            transition: background 0.3s ease;
-        }
-        .cta-button:hover { background: #4a4540; }
-        .social {
-            display: flex;
-            justify-content: center;
-            gap: 32px;
-            margin-bottom: 20px;
-        }
-        .social a {
-            font-size: 13px;
-            font-weight: 400;
-            letter-spacing: 0.08em;
-            color: #8a8580;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        .social a:hover { color: #2c2c2c; }
-        footer {
-            padding: 40px 24px;
-            text-align: center;
-            font-size: 12px;
-            color: #b0aba5;
-            letter-spacing: 0.05em;
-        }
-        @media (max-width: 640px) {
-            .name { font-size: 32px; }
-            .portrait { width: 220px; height: 220px; }
-            .title { font-size: 18px; }
-            .hero { padding: 48px 20px; }
-        }
-    </style>
 </head>
 <body>
-    <section class="hero">
-        <img src="rachel.jpg" alt="Dr. Rachel E. Weitzman" class="portrait">
-        <h1 class="name">Rachel E. Weitzman</h1>
-        <p class="credentials">MD · MPH · MS</p>
-        <p class="title">Facial Plastic & Reconstructive Surgery</p>
-        <p class="location">New York City</p>
-        <div class="divider"></div>
-        <div class="bio">
-            <p>Dr. Weitzman is a Harvard-educated surgeon specializing in facial rejuvenation, with a focus on deep plane facelift, rhinoplasty, and the aging face. She brings a surgeon-scientist's perspective to every patient — grounding aesthetic decisions in anatomy, evidence, and precision.</p>
-            <p>She is a Clinical Instructor and Fellow in Facial Plastic & Reconstructive Surgery at NYU and completed her residency in Otolaryngology–Head & Neck Surgery at NewYork-Presbyterian / Columbia and Weill Cornell.</p>
-        </div>
-        <div class="divider"></div>
-        <div class="training">
-            <p class="training-heading">Training</p>
-            <p class="training-item"><strong>Fellowship (2026–27)</strong> — Facial Plastic & Reconstructive Surgery, NYU</p>
-            <p class="training-item"><strong>Residency</strong> — Otolaryngology–Head & Neck Surgery, NewYork-Presbyterian / Columbia & Weill Cornell</p>
-            <p class="training-item"><strong>MD</strong> — Harvard Medical School, cum laude</p>
-            <p class="training-item"><strong>MPH</strong> — Harvard T.H. Chan School of Public Health</p>
-            <p class="training-item"><strong>MS & BA</strong> — University of Pennsylvania, summa cum laude</p>
-        </div>
-        <div class="research">
-            <p><strong>40+ peer-reviewed publications</strong> in leading journals including <em>The Laryngoscope</em>, <em>Plastic and Reconstructive Surgery</em>, and <em>Facial Plastic Surgery & Aesthetic Medicine</em>. Resident Editor of the <em>Facial Plastic Surgery Clinics of North America</em>.</p>
-        </div>
-        <div class="divider"></div>
-        <div class="cta">
-            <a href="mailto:rachelweitzmanmd@icloud.com" class="cta-button">Get in Touch</a>
-        </div>
-        <div class="social">
-            <a href="https://www.instagram.com/rachelweitzmanmd/" target="_blank" rel="noopener">Instagram</a>
-            <a href="https://www.researchgate.net/scientific-contributions/Rachel-E-Weitzman-2157705446" target="_blank" rel="noopener">ResearchGate</a>
-            <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Rachel+Weitzman" target="_blank" rel="noopener">PubMed</a>
-        </div>
-    </section>
-    <footer>&copy; 2026 Rachel E. Weitzman, MD MPH MS</footer>
+    <div class="page-shell">
+        <header class="site-header">
+            <a class="wordmark" href="index.html">
+                <span class="wordmark-name">Rachel Weitzman, MD</span>
+                <span class="wordmark-meta">Facial Plastic Surgery</span>
+            </a>
+            <nav class="site-nav" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#areas">Procedures</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">New York City</p>
+                    <h1>Facial Plastic Surgery</h1>
+                    <p class="lede">Rachel Weitzman, MD is a facial plastic and reconstructive surgeon in New York City, currently completing fellowship training at NYU with a focus on facial rejuvenation, rhinoplasty, and refined, natural results.</p>
+                    <div class="hero-actions">
+                        <a class="button button-dark" href="contact.html">Request Contact</a>
+                        <a class="button button-light" href="#areas">View Procedures</a>
+                    </div>
+                    <dl class="credentials-row">
+                        <div>
+                            <dt>Current Role</dt>
+                            <dd>Facial Plastic &amp; Reconstructive Surgery Fellow, NYU</dd>
+                        </div>
+                        <div>
+                            <dt>Training</dt>
+                            <dd>Harvard MD/MPH, Penn MS/BA</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="portrait-panel">
+                    <div class="portrait-frame">
+                        <img src="rachel.jpg" alt="Dr. Rachel E. Weitzman">
+                    </div>
+                    <div class="portrait-caption">
+                        <p class="portrait-name">Rachel Weitzman, MD</p>
+                        <p>New York City</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-intro" id="about">
+                <div class="section-heading">
+                    <p class="eyebrow">About</p>
+                    <h2>Training, judgment, and a modern aesthetic point of view.</h2>
+                </div>
+                <div class="two-column-copy">
+                    <p>Dr. Weitzman completed residency in Otolaryngology-Head &amp; Neck Surgery at NewYork-Presbyterian / Columbia and Weill Cornell, and is now completing fellowship training in Facial Plastic &amp; Reconstructive Surgery at NYU.</p>
+                    <p>Her work sits at the intersection of academic medicine and aesthetic judgment, with a particular interest in facial rejuvenation, rhinoplasty, eyelid surgery, and nuanced structural balance across the face and neck.</p>
+                </div>
+            </section>
+
+            <section class="section section-dark" id="areas">
+                <div class="section-heading">
+                    <p class="eyebrow">Areas of Focus</p>
+                    <h2>Facial rejuvenation and structural refinement.</h2>
+                </div>
+                <div class="focus-grid">
+                    <article class="focus-card">
+                        <h3>Deep Plane Facelift</h3>
+                        <p>Comprehensive facial rejuvenation designed to restore contour while preserving natural expression.</p>
+                    </article>
+                    <article class="focus-card">
+                        <h3>Neck Lift</h3>
+                        <p>Refinement of the jawline and neck with attention to definition, laxity, and overall harmony.</p>
+                    </article>
+                    <article class="focus-card">
+                        <h3>Midface Lift</h3>
+                        <p>Elevation of the cheeks and central face to address descent and restore youthful support.</p>
+                    </article>
+                    <article class="focus-card">
+                        <h3>Brow Lift</h3>
+                        <p>Subtle repositioning of the brow to open the upper face without an overdone look.</p>
+                    </article>
+                    <article class="focus-card">
+                        <h3>Blepharoplasty</h3>
+                        <p>Upper and lower eyelid surgery tailored to refresh the eyes while maintaining character.</p>
+                    </article>
+                    <article class="focus-card">
+                        <h3>Rhinoplasty</h3>
+                        <p>Functional and aesthetic nasal surgery centered on proportion, breathing, and facial balance.</p>
+                    </article>
+                    <article class="focus-card">
+                        <h3>Fat Transfer</h3>
+                        <p>Thoughtful volume restoration to soften hollowness and support natural rejuvenation.</p>
+                    </article>
+                    <article class="focus-card">
+                        <h3>Buccal Fat Removal</h3>
+                        <p>Selective cheek contouring for patients seeking sharper lower-face definition.</p>
+                    </article>
+                    <article class="focus-card">
+                        <h3>Lip Lift</h3>
+                        <p>Perioral refinement aimed at better balance, definition, and tooth show.</p>
+                    </article>
+                    <article class="focus-card">
+                        <h3>Chin Implant</h3>
+                        <p>Structural augmentation to strengthen profile balance and lower-face projection.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section section-light">
+                <div class="section-heading">
+                    <p class="eyebrow">Training &amp; Scholarship</p>
+                    <h2>Academic training with surgical depth.</h2>
+                </div>
+                <div class="detail-grid">
+                    <div class="detail-card">
+                        <h3>Training</h3>
+                        <ul class="detail-list">
+                            <li>Facial Plastic &amp; Reconstructive Surgery Fellowship, NYU</li>
+                            <li>Otolaryngology-Head &amp; Neck Surgery Residency, NewYork-Presbyterian / Columbia &amp; Weill Cornell</li>
+                            <li>MD, Harvard Medical School</li>
+                            <li>MPH, Harvard T.H. Chan School of Public Health</li>
+                            <li>MS and BA, University of Pennsylvania</li>
+                        </ul>
+                    </div>
+                    <div class="detail-card">
+                        <h3>Research</h3>
+                        <p>Author of 40+ peer-reviewed publications in journals including <em>The Laryngoscope</em>, <em>Plastic and Reconstructive Surgery</em>, and <em>Facial Plastic Surgery &amp; Aesthetic Medicine</em>.</p>
+                        <div class="inline-links">
+                            <a href="https://www.researchgate.net/scientific-contributions/Rachel-E-Weitzman-2157705446" target="_blank" rel="noopener">ResearchGate</a>
+                            <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Rachel+Weitzman" target="_blank" rel="noopener">PubMed</a>
+                            <a href="https://www.instagram.com/rachelweitzmanmd/" target="_blank" rel="noopener">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section contact-banner">
+                <div>
+                    <p class="eyebrow">Contact</p>
+                    <h2>Request a consultation or send a professional inquiry.</h2>
+                </div>
+                <a class="button button-dark" href="contact.html">Contact Rachel</a>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Rachel Weitzman, MD</p>
+        </footer>
+    </div>
 </body>
 </html>
